@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Registered Refugees</h2>
+{% if registrations %}
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Birth date</th>
+            <th>Email</th>
+            <th>Country</th>
+            <th>Phone Number</th>
+        </tr>
+        {% for person in registrations %}
+        <tr>
+            <td>{{ person.name }}</td>
+            <td>{{ person.last_name }}</td>
+            <td>{{ person.birth_date }}</td>
+            <td>{{ person.email }}</td>
+            <td>{{ person.phone_list }}</td>
+            <td>{{ person.phone_number }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+<p>No registrations found yet.</p>
+{% endif %}
+{% endblock %}
