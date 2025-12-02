@@ -17,6 +17,7 @@ def submit():
     email = request.form['email']
     phone_number = request.form['phone_number']
     phone_list = request.form['phone']
+    medical_assistance = request.form['medical_assistance']
 
     if os.path.exists('registrations.json'):
         with open('registrations.json', 'r') as file:
@@ -24,12 +25,12 @@ def submit():
     else:
         data = []
 
-    data.append({'name': name, 'last_name': last_name, 'birth_date': birth_date, 'email': email, 'phone_number': phone_number, 'phone_list': phone_list})
+    data.append({'name': name, 'last_name': last_name, 'birth_date': birth_date, 'email': email, 'phone_number': phone_number, 'phone_list': phone_list, 'medical_assistance': medical_assistance})
     with open('registrations.json', 'w') as file:
         json.dump(data, file, indent=2)
     return redirect(url_for('index'))
 
-    if not name or not last_name or not birth_date or not email or not phone_number or not phone_list:
+    if not name or not last_name or not birth_date or not email or not phone_number or not phone_list or not medical_assistance:
         flash('all fields are required to be filled in!')
         return redirect(url_for('register'))
     else:
