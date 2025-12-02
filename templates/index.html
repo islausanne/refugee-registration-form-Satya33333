@@ -1,5 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
+<style>body {background-color: #36536B;}</style>
+
+<img src="{{ url_for('static', filename='ngo_logo.png') }}" alt="ngo_logo" width="200" height="200">
+
+<p></p>
 <h1>Welcome to the Refugee Registration</h1>
 <p>Please use the menu above to register or view submitted data.</p>
 {% endblock %}

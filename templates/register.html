@@ -4,7 +4,7 @@
     <title>Register</title>
 </head>
 <body>
-    <!-- Display validation messages -->
+
     {% with messages = get_flashed_messages() %}
         {% if messages %}
             <ul>
@@ -14,6 +14,8 @@
             </ul>
         {% endif %}
     {% endwith %}
+
+    <style>body {background-color: #36536B;}</style>
 
     <form action="/submit" method="POST" id="register">
     <label for="first_name">First Name:</label>
@@ -28,8 +30,11 @@
     <label for="email">Email:</label>
     <input type="email" id="email" name="email"><br><br>
 
+
+
+
     <label>Phone Number:</label>
-    <select class="form-select" id="phone" name="phone">
+    <select class="form-select" id="phone" name="phone" style="width: 100px;">
     <option>phone</option>
     <option value="93">Afghanistan +93</option>
     <option value="358">Aland Islands +358</option>
@@ -283,7 +288,9 @@
     <option value="260">Zambia +260</option>
     <option value="263">Zimbabwe +263</option>
 </select>
-<input type="number" id="phone_number" name="phone_number"><br><br>
+<input type="number" id="phone_number" name="phone_number" style="width: 300px;"><br><br>
+
+
 
 
 
