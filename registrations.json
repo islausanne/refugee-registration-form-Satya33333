@@ -2,17 +2,12 @@
   {
     "name": "Robin",
     "last_name": "David Ducros",
-    "birth_date": "2010-04-06",
-    "email": "rdavidducros@islstudent.ch",
-    "phone_number": "676767676",
-    "phone_list": "41"
-  },
-  {
-    "name": "",
-    "last_name": "",
-    "birth_date": "",
-    "email": "",
-    "phone_number": "",
-    "phone_list": "phone"
+    "birth_date": "2025-12-11",
+    "email": "johnpork@gmail.com",
+    "phone_number": "98798798787",
+    "phone_list": "213",
+    "medical_assistance": "on",
+    "medical_box": "kjhkjhkjh",
+    "extra_box": "khkjhkjh"
   }
 ]

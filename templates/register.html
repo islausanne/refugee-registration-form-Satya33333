@@ -33,16 +33,17 @@
     <label for="last_name">Last Name:</label>
     <input type="text" id="last_name" name="last_name"><br><br>
 
-    <label for="birth_date">Birth Date (DD/MM/YY): </label>
+    <label for="birth_date">Birth Date (DD/MM/YYYY): </label>
     <input type="date" id="birth_date" name="birth_date"><br><br>
 
-    <label for="email">Email:</label>
+    <label for="email">Email (e.g "example@gmail.com"):</label>
     <input type="email" id="email" name="email"><br><br>
 
     <label for="medical_assistance">Medical assistance:</label>
-    <input type="checkbox" id="medical_assistance" name="medical_assistance"
+    <input type="checkbox" id="medical_assistance" name="medical_assistance"><br><br>
 
-    <p></p>
+    <label for="medical_box">*Optional* if box is ticked:</label><br>
+    <input type="text" id="medical_box" name="medical_box" style="width: 300px; height: 50px;"><br><br>
 
 
 
@@ -305,13 +306,31 @@
 </select>
 <input type="number" id="phone_number" name="phone_number" style="width: 300px;"><br><br>
 
+    <label for="extra_box">Extra Information:</label><br>
+    <input type="text" id="extra_box" name="extra_box" style="width: 300px; height: 100px;"><br><br>
+
 
 
 
 
 
     <p></p>
+   <style>
+        input[type="submit"] {
+        width: 200px;
+        height: 50px;
+        background-color: red;
+        border: 2px solid darkred;
+        border-radius: 0;
+        font-size: 18px;
+        cursor: pointer;
+    }
+    </style>
+
     <input type="submit" value="Submit">
+
+
+
     </form>
 </body>
 {% endblock %}

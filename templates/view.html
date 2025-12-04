@@ -9,8 +9,11 @@
             <th>Last Name</th>
             <th>Birth date</th>
             <th>Email</th>
+            <th>Medical Requirement</th>
+            <th>Medical Explanation</th>
             <th>Country</th>
             <th>Phone Number</th>
+            <th>Extra Information</th>
         </tr>
         {% for person in registrations %}
         <tr>
@@ -18,8 +21,11 @@
             <td>{{ person.last_name }}</td>
             <td>{{ person.birth_date }}</td>
             <td>{{ person.email }}</td>
+            <td>{{ person.medical_assistance }}</td>
+            <td>{{ person.medical_box }}</td>
             <td>{{ person.phone_list }}</td>
             <td>{{ person.phone_number }}</td>
+            <td>{{ person.extra_box }}</td>
         </tr>
         {% endfor %}
     </table>
